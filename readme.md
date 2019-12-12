@@ -1,16 +1,16 @@
-# Project Title
-A *brief* paragraph explaining your project and what it does should be written here. The idea is to give readers an overview of what it is that you've built.
+# Automated Generation of Optimisation Algorithms
+The aim of this project is to create a generalised framework for inducing and optimising decision trees.
+Given a dataset, we will form a decision tree and then optimise that tree to achieve greater performance in terms of a specified objective function. (i.e. accuracy of the model, size of the tree)
+This project aims to create a generalised framework for producing interpretable decision trees from multivariate data, as well as being capable of producing highly accurate classification models. 
 
 ## Getting Started (Software Based)
-You should write a bit about **how** I can get your project working, It's good to think in terms of the following sections:
 
 ### Prerequisites
-What do I need in order to get your project running? For example,
-* Python 3.5 (or later)
-* sqlalchemy
+
+* Visual Studio 2019 (C#)
 
 ### Installing
-A step by step guide on how to build and install your software, for example:
+
 
 #### Edit the configuration file
 In myconfig.ini, change the following settings to match your requirements:
@@ -21,40 +21,21 @@ database_user=test
 database_pass=password
 ```
 
-#### Install libraries and run program
+#### Install libraries 
 
-```
-pip install -r requirements.txt
-python3 main.py
-```
+Using System.Text
+Using System.Linq
+Using System.Collections
+Using System.IO
+Using System.Data
 
 ### Running Tests
-How do I run your tests? Make it as easy as possible to do this!
-
-```
-pip install -r requirements.txt
-./tests.py
-```
 
 ### Versioning Statergy
-What versioning statergy are you using for your project, something like [semantic versioning](https://semver.org/) might be a good idea.
-
-## Getting Started (Hardware Based)
-
-### Pre-requisites
-
-* Components
-* PBC
-* etc..
- 
-### Component Testing
-### PCB Board design
-### System Building
-### Hardware version Stratgery
+[semantic versioning](https://semver.org/)
 
 ## Authors
-Provide your names here
-* Fred Bloggs - UI Design
+* Andrew Rippington
 
 ## References
 * [Gitlab Markdown Guide](https://docs.gitlab.com/ee/user/markdown.html)
