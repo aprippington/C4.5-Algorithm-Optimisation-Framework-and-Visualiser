@@ -29,7 +29,9 @@ Using System.Collections
 Using System.IO
 Using System.Data
 ```
-### Running Tests
+### Running 
+
+* CSV file of data to classify
 
 ### Versioning Statergy
 [semantic versioning](https://semver.org/)
