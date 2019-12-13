@@ -11,15 +11,7 @@ This project aims to create a generalised framework for producing interpretable 
 
 ### Installing
 
-
 #### Edit the configuration file
-In myconfig.ini, change the following settings to match your requirements:
-
-```
-database_name=test
-database_user=test
-database_pass=password
-```
 
 #### Install libraries 
 ```
@@ -31,7 +23,7 @@ Using System.Data
 ```
 ### Running 
 
-* CSV file of data to classify
+* CSV file of raw data (Target attribute must be in the last column)
 
 ### Versioning Statergy
 [semantic versioning](https://semver.org/)
