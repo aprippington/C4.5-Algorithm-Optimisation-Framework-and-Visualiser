@@ -2,28 +2,52 @@
 This piece of software is a generalised framework for inducing and optimising classification trees.
 Given a dataset, we generate a decision/regression tree and then optimise the tree structure with respect to accuracy and size. 
 
-## Getting Started (Software Based)
-
-Download the following folders to local storage:
-
-
-
 ### Prerequisites
 
-* Visual Studio 2019 (C#)
+* Microsoft Visual Studio 2019 IDE
+* Microsoft Visual Studio Code
+
+#### Download Dependencies
+
+Package Management:
+``` 
+Nuget                                        (https://www.nuget.org/)
+```
+
+Visualisation:
+```
+Emscripten                                   (https://emscripten.org)
+Nodejs                                       (https://nodejs.org/en/)
+Yarn                                         (https://yarnpkg.com/)
+Graphviz                                     (https://www.graphviz.org/)
+Graphviz VS Code .DOT Language Support       (https://github.com/Stephanvs/vscode-graphviz)
+GraphViz VS Code Previewer                   (https://marketplace.visualstudio.com/items?itemName=joaompinto.vscode-graphviz)
+GraphViz Browser Wrapper                     (https://github.com/mdaines/viz.js/)
+DotNetGraph                                  (https://github.com/vfrz/DotNetGraph/tree/master/Sources/DotNetGraph)  
+```
+
+## Getting Started (Software Based)
+
+Download the following files to a local directory:
+
+Decision_Tree_Optimisation_Generalised.csproj
+Accuracy.cs
+Branch.cs
+DataLoader.cs
+DecisionTree.cs
+DOT_file_generator.cs
+Node.cs
 
 ### Installing
 
-#### Edit the configuration file
+Clone the following folder locally: Decicion_Tree_Optimisation_Generalised (INSERT LINK HERE)
 
-#### Install libraries 
-```
-Using System.Text
-Using System.Linq
-Using System.Collections
-Using System.IO
-Using System.Data
-```
+#### Edit project configuration
+
+The Decision_Tree_Optimisation_Generalised.csproj file already contains correct configuration and references between projects, thus no manual configuration is necessary. 
+
+ClosedXML; will be installed automatically upon first opening the project.
+
 ### Running 
 
 * CSV file of raw data (Target attribute must be in the last column)
