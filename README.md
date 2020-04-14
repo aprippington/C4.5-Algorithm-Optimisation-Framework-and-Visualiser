@@ -26,23 +26,20 @@ GraphViz Browser Wrapper                     (https://github.com/mdaines/viz.js/
 DotNetGraph                                  (https://github.com/vfrz/DotNetGraph/tree/master/Sources/DotNetGraph)  
 ```
 
-## Getting Started (Software Based)
+## Installing
 
-Download the following files to a local directory:
+Clone the following files to a local directory:
 
-Decision_Tree_Optimisation_Generalised.csproj
-Accuracy.cs
-Branch.cs
-DataLoader.cs
-DecisionTree.cs
-DOT_file_generator.cs
-Node.cs
+*Decision_Tree_Optimisation_Generalised.csproj
+*Accuracy.cs
+*Branch.cs
+*DataLoader.cs
+*DecisionTree.cs
+*DOT_file_generator.cs
+*Node.cs
 
-### Installing
 
-Clone the following folder locally: Decicion_Tree_Optimisation_Generalised (INSERT LINK HERE)
-
-#### Edit project configuration
+#### Project configuration
 
 The Decision_Tree_Optimisation_Generalised.csproj file already contains correct configuration and references between projects, thus no manual configuration is necessary. 
 
