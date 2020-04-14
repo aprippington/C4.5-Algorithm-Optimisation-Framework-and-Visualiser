@@ -1,9 +1,12 @@
-# Automated Generation of Optimisation Algorithms
-The aim of this project is to create a generalised framework for inducing and optimising decision trees.
-Given a dataset, we will form a decision tree and then optimise that tree to achieve greater performance in terms of a specified objective function. (i.e. accuracy of the model, size of the tree)
-This project aims to create a generalised framework for producing interpretable decision trees from multivariate data, as well as being capable of producing highly accurate classification models. 
+# Optimisation of Classification Tree Models
+This piece of software is a generalised framework for inducing and optimising classification trees.
+Given a dataset, we generate a decision/regression tree and then optimise the tree structure with respect to accuracy and size. 
 
 ## Getting Started (Software Based)
+
+Download the following folders to local storage:
+
+
 
 ### Prerequisites
 
@@ -24,6 +27,7 @@ Using System.Data
 ### Running 
 
 * CSV file of raw data (Target attribute must be in the last column)
+* Parameters are at the following locations:
 
 ### Versioning Statergy
 [semantic versioning](https://semver.org/)
