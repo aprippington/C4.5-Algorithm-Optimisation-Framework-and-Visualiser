@@ -7,6 +7,13 @@ Given a dataset, we generate a decision/regression tree and then optimise the tr
 * Microsoft Visual Studio 2019 IDE
 * Microsoft Visual Studio Code
 
+
+* CSV file of data to be classified
+* Restrictions:
+* -Target attribute must be in the final column
+* -Values must be to a consistent number of decimal places, i.e. if a column contains 3.4, then the value 3 must be stored as 3.0
+* -Top row must contain headings (attribute names)
+
 #### Download Dependencies
 
 Package Management:
@@ -47,8 +54,10 @@ ClosedXML; will be installed automatically upon first opening the project.
 
 ### Running 
 
-* CSV file of raw data (Target attribute must be in the last column)
-* Parameters are at the following locations:
+* Parameters are stored at the following locations:
+* 
+
+
 
 ### Versioning Statergy
 [semantic versioning](https://semver.org/)
