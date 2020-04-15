@@ -9,12 +9,12 @@ Given a dataset, we generate a decision/regression tree and then optimise the tr
 
 
 * CSV file of data to be classified
-* Restrictions:
+* CSV Restrictions:
 * -Target attribute must be in the final column
 * -Values must be to a consistent number of decimal places, i.e. if a column contains 3.4, then the value 3 must be stored as 3.0
 * -Top row must contain headings (attribute names)
 
-#### Download Dependencies
+#### Dependencies
 
 Package Management:
 ``` 
@@ -34,6 +34,8 @@ DotNetGraph                                  (https://github.com/vfrz/DotNetGrap
 ```
 
 ## Installing
+
+Install all of the above dependencies.
 
 Clone the following files to a local directory:
 
