@@ -60,6 +60,9 @@ ClosedXML; will be installed automatically upon first opening the project.
 * 
 
 
+### Design
+
+### Testing
 
 ### Versioning Statergy
 [semantic versioning](https://semver.org/)
