@@ -57,14 +57,14 @@ ClosedXML; will be installed automatically upon first opening the project.
 ### Running 
 
 * Parameters are stored at the following locations:
-* blah blah blah
+* 
 
 
 ### Design
-*
+* blah blah blah
 
 ### Testing
-*blah blah blah
+* blah blah blah
 
 ### Versioning Statergy
 [semantic versioning](https://semver.org/)
