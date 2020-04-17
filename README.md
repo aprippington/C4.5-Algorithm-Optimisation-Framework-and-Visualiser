@@ -63,7 +63,20 @@ ClosedXML; will be installed automatically upon first opening the project.
 ###Visualising Trees
 
 ### Design
-* blah blah blah
+Design of this project can be broken down into two parts; Data structure selection and class architecture. 
+
+The first critical decision that had to be made was selecting the data types and structures that would be used to represent our datasets. Initially, 2D arrays 
+were selected as the dataset storage structure. However, this was almost immediately changed and the DataTable class was chosen instead as it provides in-built generalisation
+power that 2D arrays could not offer- as well as forseeing vulnerability when altering a dataset comprised of arrays. We made this decision as we preferred to have a more
+robust framework that we could manipulate safely rather than a faster, but more fragile structure comprised of arrays. Optimisation of a tree structure also requires a large 
+amount of data cloning, as each node must store the dataset partition that 'enters' it. Utilising the DataTable class allows this functionality to be implemented in fewer lines 
+of code, allowing our code to be more interpretable should modifications be required. 
+
+The initial class structure is fairly intuitive. Most methods are either recursive (and thus stored in the Node class) or are stored in the DecisionTree class which contains
+the C4.5 algorithm itself. Recursive methods are the foundation of this project as we are dealing with trees on a macro level rather than individual nodes, thus all methods that 
+are implemented on tree structures themselves are stored within class Node. A manual method has been written to create deep clones of Nodes, at which point we are able to safely
+manipulate trees without losing their initial structure. 
+
 
 ### Testing
 * blah blah blah
