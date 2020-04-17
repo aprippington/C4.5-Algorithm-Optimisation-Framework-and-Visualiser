@@ -1,4 +1,4 @@
-# (C#) C4.5 Algorithm, Optimisation Framework and Visualisar
+# (C#) C4.5 Algorithm, Optimisation Framework and Visualiser
 This piece of software is a generalised framework for inducing and optimising classification trees.
 Given a dataset, we generate a decision/regression tree and then optimise the tree structure with respect to accuracy and size. 
 
