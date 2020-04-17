@@ -62,6 +62,7 @@ ClosedXML; will be installed automatically upon first opening the project.
 
 ###Visualising Trees
 
+
 ### Design
 Design of this project can be broken down into two parts; Data structure selection and class architecture. 
 
