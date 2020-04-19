@@ -80,7 +80,14 @@ manipulate trees without losing their initial structure.
 
 
 ### Testing
-* blah blah blah
+Unit testing was performed as the project was built, generally on a function by function level. Each method has been sanity tested upon creation to ensure correct functionality. 
+Integration tests were used where possible between pairs of related methods to ensure compatibility of data types and correctness, as well as to assess possible vulnerability
+to unchecked exceptions. After the inital C4.5 algorithm was implemented, build verification testing was performed to ensure that the expected output was within a reasonable range or other similar
+classifiers (in other languages).
+
+Regression testing was performed towards the end of programming to ensure that any new additions did not affect pre-existing functionality. Finally, system testing was used to 
+measure the capability of the framework for accepting input data of different formats. We've ensured that our code can identify and correctly parse/manage data of binary, continuous
+and categorical/nominal types. 
 
 ### Versioning Statergy
 [semantic versioning](https://semver.org/)
