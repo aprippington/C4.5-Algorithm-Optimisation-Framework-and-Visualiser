@@ -39,20 +39,20 @@ Install all of the above dependencies.
 
 Clone the following files to a local directory:
 
-*Decision_Tree_Optimisation_Generalised.csproj
-*Accuracy.cs
-*Branch.cs
-*DataLoader.cs
-*DecisionTree.cs
-*DOT_file_generator.cs
-*Node.cs
+* Decision_Tree_Optimisation_Generalised.csproj
+* Accuracy.cs
+* Branch.cs
+* DataLoader.cs
+* DecisionTree.cs
+* DOT_file_generator.cs
+* Node.cs
 
 
 #### Project configuration
 
 The Decision_Tree_Optimisation_Generalised.csproj file already contains correct configuration and references between projects, thus no manual configuration is necessary. 
 
-ClosedXML; will be installed automatically upon first opening the project.
+ClosedXML; will be installed automatically upon first opening the project. (Used to store results and performance metrics in a .xlsx file)
 
 ### Running 
 
