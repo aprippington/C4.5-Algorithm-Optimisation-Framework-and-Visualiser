@@ -62,6 +62,7 @@ ClosedXML; will be installed automatically upon first opening the project. (Used
 
 ###Visualisation
 
+##Features
 
 ### Design
 Design of this project can be broken down into two parts; Data structure selection and class architecture. 
@@ -94,6 +95,8 @@ and categorical/nominal types.
 
 ## Authors
 * Andrew Rippington
+
+## Credits
 
 ## References
 * [Gitlab Markdown Guide](https://docs.gitlab.com/ee/user/markdown.html)
