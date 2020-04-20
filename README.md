@@ -7,13 +7,6 @@ Given a dataset, we generate a decision/regression tree using C4.5 and subsequen
 * Microsoft Visual Studio 2019 IDE
 * Microsoft Visual Studio Code
 
-
-* CSV file of data to be classified
-* CSV Restrictions:
-* -Target attribute must be in the final column
-* -Values must be to a consistent number of decimal places, i.e. if a column contains 3.4, then the value 3 must be stored as 3.0
-* -Top row must contain headings (attribute names)
-
 #### Dependencies
 
 Package Management:
@@ -57,8 +50,32 @@ ClosedXML; will be installed automatically upon first opening the project. (Used
 ### Running 
 
 * Parameters are stored at the following locations:
-* 
+*  	R - row limiting parameter
+•	K – number of partitions to split our data into for k-fold cross validation (default: 10)
+•	O – accuracy/RMSE or size (or both)
+•	Tr – Training set size (as a proportion of the full dataset)
+•	T - Test set size (as a proportion of the full dataset)
+•	V - Validation set size set (as a proportion of the full dataset)
+•	Vi - Validation subset size (as a proportion of the validation set)
+•	i – the number of times to perform our optimisation cycle
+•	P – probability that a change is kept if it worsens the solution 
+•	X – number of optimisation iterations implemented before re-selecting a random subset of our validation set
+•	D – Dataset 
 
+* Set all parameters to desired values and run Program.cs Main method
+
+
+### Capabilities & Restrictions
+
+Accepted Data Types:
+* -Double
+* -Int
+* -String
+
+Input CSV file:
+* -Target attribute must be in the final column
+* -Values must be to a consistent number of decimal places, i.e. if a column contains 3.4, then the value 3 must be stored as 3.0
+* -Top row must contain headings (attribute names)
 
 ### Visualisation
 
