@@ -32,13 +32,14 @@ Install all of the above dependencies from the links provided.
 
 Clone the following files to a local directory:
 
-Decision_Tree_Optimisation_Generalised.csproj
-Accuracy.cs
-Branch.cs
-DataLoader.cs
-DecisionTree.cs
-DOT_file_generator.cs
-Node.cs
+* Decision_Tree_Optimisation_Generalised.csproj
+* Accuracy.cs
+* Branch.cs
+* DataLoader.cs
+* DecisionTree.cs
+* DOT_file_generator.cs
+* Node.cs
+* Program.cs
 
 
 #### Project configuration
@@ -49,26 +50,25 @@ ClosedXML; will be installed automatically upon first opening the project. (Used
 
 ### Running 
 
-* Set all of the following parameters to desired values;
+Set all of the following parameters to desired values;
 
-R - row limiting parameter                                                                                      Location: DecicionTree.cs line 37
-V - Validation set size set (as a proportion of the full dataset)                                               Location: DecicionTree.cs line 646
-i – the number of times to perform our optimisation cycle                                                       Location: DecicionTree.cs line 662
-X – number of optimisation iterations implemented before re-selecting a random subset of our validation set     Location: DecicionTree.cs line 670
-Vi - Validation subset size (as a proportion of the validation set)                                             Location: DecicionTree.cs line 774
-D – Dataset (path to CSV file where dataset to be classified is stored)                                         Location: DecicionTree.cs line 811 
-K – number of partitions to split our data into for k-fold cross validation (default: 10)                       Location: DecicionTree.cs line 811
-Results - desired name of output .xlsx file                                                                     Location: DecisionTree.cs line 881
+* R - row limiting parameter                                                                                      Location: DecicionTree.cs line 37
+* V - Validation set size set (as a proportion of the full dataset)                                               Location: DecicionTree.cs line 646
+* i – the number of times to perform our optimisation cycle                                                       Location: DecicionTree.cs line 662
+* X – number of optimisation iterations implemented before re-selecting a random subset of our validation set     Location: DecicionTree.cs line 670
+* Vi - Validation subset size (as a proportion of the validation set)                                             Location: DecicionTree.cs line 774
+* D – Dataset (path to CSV file where dataset to be classified is stored)                                         Location: DecicionTree.cs line 811 
+* K – number of partitions to split our data into for k-fold cross validation (default: 10)                       Location: DecicionTree.cs line 811
+* Results - desired name of output .xlsx file                                                                     Location: DecisionTree.cs line 881
 
 Note that both the training and test set sizes, Tr and T, are implicitly determined by the value of K. 
 I.e if K=10, Tr=90% and T = 10%    or   if k=5, Tr=80% and T =20%.
 
-* To start the program, run Program.cs Main method
-
+To start the program, run Program.cs Main method
 
 ### Capabilities & Restrictions
 
-Both continuous and categorical variables are permitted. Accepted Data Types: Double, Int, String
+Both continuous and categorical input variables are permitted. Data types will be automatically detected during parsing. Accepted Data Types: Double, Int, String
 
 Input CSV file:
 * Target attribute must be in the final column
@@ -106,17 +106,13 @@ measure the capability of the framework for accepting input data of different fo
 and categorical/nominal types. 
 
 ### Versioning Statergy
-Dataset specific code and generalised code
-[semantic versioning](https://semver.org/)
+Semantic Versioning
+1.0 Dataset-specific code (Abalone, no optimisation)
+2.0 Decision Tree Optimisation (Generalised)
 
 ### Authors
 * Andrew Rippington
 
 ### Credits
 
-Anonymous author, Codeplex https://archive.codeplex.com/?p=id3algorithm
-
-## References
-* [Gitlab Markdown Guide](https://docs.gitlab.com/ee/user/markdown.html)
-* [Example 1](https://github.com/erasmus-without-paper/ewp-specs-sec-intro/tree/v2.0.2)
-* [Example 2](https://github.com/erasmus-without-paper/ewp-specs-architecture/tree/v1.10.0)
+The following repository helped inspire some small parts of code structure. Unknown author; Codeplex https://archive.codeplex.com/?p=id3algorithm
