@@ -50,7 +50,9 @@ ClosedXML; will be installed automatically upon first opening the project. (Used
 ### Running 
 
 * Set all parameters to the desired values;
-*  	R - row limiting parameter                                                                                      Location: DecicionTree.cs line 37
+ 
+
+•  	R - row limiting parameter                                                                                      Location: DecicionTree.cs line 37
 •	V - Validation set size set (as a proportion of the full dataset)                                               Location: DecicionTree.cs line 646
 •	i – the number of times to perform our optimisation cycle                                                       Location: DecicionTree.cs line 662
 •	X – number of optimisation iterations implemented before re-selecting a random subset of our validation set     Location: DecicionTree.cs line 670
