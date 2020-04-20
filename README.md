@@ -110,9 +110,15 @@ Semantic Versioning
 1.0 Dataset-specific code (Abalone, no optimisation)  
 2.0 Decision Tree Optimisation (Generalised)
 
+major.patch will be used for future releases if they are to materialise. 
+Major: Implemented for large changes which cause older versions to become redundant. i.e. All functionality remains but a new large feature is added. 
+Minor: Bug fixes
+
 ### Authors
 * Andrew Rippington
 
 ### Credits
 
-The following repository helped inspire some small segments of code structure. Unknown author; Codeplex https://archive.codeplex.com/?p=id3algorithm
+@noffle for the 'Art of README' article which helped to form the basis this document.  
+The following repository also helped inspire some small segments of code structure. Unknown author; Codeplex https://archive.codeplex.com/?p=id3algorithm
+
