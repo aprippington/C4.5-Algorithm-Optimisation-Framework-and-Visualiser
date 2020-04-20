@@ -110,9 +110,9 @@ Semantic Versioning
 1.0 Dataset-specific code (Abalone, no optimisation)  
 2.0 Decision Tree Optimisation (Generalised)
 
-major.patch will be used for future releases if they are to materialise.   
+[major.patch] will be used for future releases if they are to materialise.   
 Major: Implemented for large changes which cause older versions to become redundant. i.e. All functionality remains but a new large feature is added.   
-Minor: Bug fixes  
+Patch: Bug fixes  
 
 ### Authors
 * Andrew Rippington  
