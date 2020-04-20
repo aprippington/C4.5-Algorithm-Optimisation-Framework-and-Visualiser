@@ -32,13 +32,13 @@ Install all of the above dependencies from the links provided.
 
 Clone the following files to a local directory:
 
-* Decision_Tree_Optimisation_Generalised.csproj
-* Accuracy.cs
-* Branch.cs
-* DataLoader.cs
-* DecisionTree.cs
-* DOT_file_generator.cs
-* Node.cs
+Decision_Tree_Optimisation_Generalised.csproj
+Accuracy.cs
+Branch.cs
+DataLoader.cs
+DecisionTree.cs
+DOT_file_generator.cs
+Node.cs
 
 
 #### Project configuration
@@ -49,40 +49,36 @@ ClosedXML; will be installed automatically upon first opening the project. (Used
 
 ### Running 
 
-* Set all parameters to the desired values;
- 
+* Set all of the following parameters to desired values;
 
-•  	R - row limiting parameter                                                                                      Location: DecicionTree.cs line 37
-•	V - Validation set size set (as a proportion of the full dataset)                                               Location: DecicionTree.cs line 646
-•	i – the number of times to perform our optimisation cycle                                                       Location: DecicionTree.cs line 662
-•	X – number of optimisation iterations implemented before re-selecting a random subset of our validation set     Location: DecicionTree.cs line 670
-•	Vi - Validation subset size (as a proportion of the validation set)                                             Location: DecicionTree.cs line 774
-•	D – Dataset (path to CSV file where dataset to be classified is stored)                                         Location: DecicionTree.cs line 811 
-•	K – number of partitions to split our data into for k-fold cross validation (default: 10)                       Location: DecicionTree.cs line 811
-•   Results - desired name of output .xlsx file                                                                     Location: DecisionTree.cs line 881
+R - row limiting parameter                                                                                      Location: DecicionTree.cs line 37
+V - Validation set size set (as a proportion of the full dataset)                                               Location: DecicionTree.cs line 646
+i – the number of times to perform our optimisation cycle                                                       Location: DecicionTree.cs line 662
+X – number of optimisation iterations implemented before re-selecting a random subset of our validation set     Location: DecicionTree.cs line 670
+Vi - Validation subset size (as a proportion of the validation set)                                             Location: DecicionTree.cs line 774
+D – Dataset (path to CSV file where dataset to be classified is stored)                                         Location: DecicionTree.cs line 811 
+K – number of partitions to split our data into for k-fold cross validation (default: 10)                       Location: DecicionTree.cs line 811
+Results - desired name of output .xlsx file                                                                     Location: DecisionTree.cs line 881
 
 Note that both the training and test set sizes, Tr and T, are implicitly determined by the value of K. 
 I.e if K=10, Tr=90% and T = 10%    or   if k=5, Tr=80% and T =20%.
 
-* To initiate the program, run Program.cs Main method
+* To start the program, run Program.cs Main method
 
 
 ### Capabilities & Restrictions
 
-Accepted Data Types:
-* -Double
-* -Int
-* -String
+Both continuous and categorical variables are permitted. Accepted Data Types: Double, Int, String
 
 Input CSV file:
-* -Target attribute must be in the final column
-* -Values must be to a consistent number of decimal places, i.e. if a column contains 3.4, then the value 3 must be stored as 3.0
-* -Top row must contain headings (attribute names)
+* Target attribute must be in the final column
+* Values must be stored to a consistent number of decimal places, i.e. if a column contains 3.4, then the value 3 must be stored as 3.0
+* Top row must contain headings (attribute names)
 
 ### Visualisation
 
-### Features
-What makes this project stand out!?
+After running the C4.5 and optimisation code, a .DOT file will be created and stored in the working directory. Open this file with Visual Studio Code, right-click in 
+the console and select 'Preview to the side'. This will display a GraphViz generated image of the best decision tree created.
 
 ### Design
 Design of this project can be broken down into two parts; Data structure selection and class architecture. 
@@ -98,7 +94,6 @@ The initial class structure is fairly intuitive. Most methods are either recursi
 the C4.5 algorithm itself. Recursive methods are the foundation of this project as we are dealing with trees on a macro level rather than individual nodes, thus all methods that 
 are implemented on tree structures themselves are stored within class Node. A manual method has been written to create deep clones of Nodes, at which point we are able to safely
 manipulate trees without losing their initial structure. 
-
 
 ### Testing
 Unit testing was performed as the project was built, generally on a function by function level. Each method has been sanity tested upon creation to ensure correct functionality. 
