@@ -35,7 +35,7 @@ DotNetGraph                                  (https://github.com/vfrz/DotNetGrap
 
 ## Installing
 
-Install all of the above dependencies.
+Install all of the above dependencies from the links provided.
 
 Clone the following files to a local directory:
 
