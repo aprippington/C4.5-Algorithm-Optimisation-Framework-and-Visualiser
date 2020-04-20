@@ -98,6 +98,8 @@ and categorical/nominal types.
 
 ### Credits
 
+Anonymous author, Codeplex https://archive.codeplex.com/?p=id3algorithm
+
 ## References
 * [Gitlab Markdown Guide](https://docs.gitlab.com/ee/user/markdown.html)
 * [Example 1](https://github.com/erasmus-without-paper/ewp-specs-sec-intro/tree/v2.0.2)
