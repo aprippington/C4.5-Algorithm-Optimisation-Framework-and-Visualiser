@@ -59,7 +59,9 @@ Set all of the following parameters to desired values;
 * Vi - Validation subset size (as a proportion of the validation set)                                             Location: DecicionTree.cs line 774
 * D – Dataset (path to CSV file where dataset to be classified is stored)                                         Location: DecicionTree.cs line 811 
 * K – number of partitions to split our data into for k-fold cross validation (default: 10)                       Location: DecicionTree.cs line 811
-* Results - desired name of output .xlsx file                                                                     Location: DecisionTree.cs line 881
+
+* Results - desired name of output .xlsx file                                                                     Location: DecisionTree.cs line 881  
+* Vis - desired name of output .dot file                                                                          Location: DOT_file_generator.cs line 129
 
 Note that both the training and test set sizes, Tr and T, are implicitly determined by the value of K. 
 I.e if K=10, Tr=90% and T=10%    or   if k=5, Tr=80% and T=20%.
