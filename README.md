@@ -62,7 +62,7 @@ Set all of the following parameters to desired values;
 * Results - desired name of output .xlsx file                                                                     Location: DecisionTree.cs line 881
 
 Note that both the training and test set sizes, Tr and T, are implicitly determined by the value of K. 
-I.e if K=10, Tr=90% and T = 10%    or   if k=5, Tr=80% and T =20%.
+I.e if K=10, Tr=90% and T=10%    or   if k=5, Tr=80% and T=20%.
 
 To start the program, run Program.cs Main method
 
@@ -106,8 +106,8 @@ measure the capability of the framework for accepting input data of different fo
 and categorical/nominal types. 
 
 ### Versioning Statergy
-Semantic Versioning
-1.0 Dataset-specific code (Abalone, no optimisation)
+Semantic Versioning  
+1.0 Dataset-specific code (Abalone, no optimisation)  
 2.0 Decision Tree Optimisation (Generalised)
 
 ### Authors
@@ -115,4 +115,4 @@ Semantic Versioning
 
 ### Credits
 
-The following repository helped inspire some small parts of code structure. Unknown author; Codeplex https://archive.codeplex.com/?p=id3algorithm
+The following repository helped inspire some small segments of code structure. Unknown author; Codeplex https://archive.codeplex.com/?p=id3algorithm
