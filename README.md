@@ -60,9 +60,9 @@ ClosedXML; will be installed automatically upon first opening the project. (Used
 * 
 
 
-###Visualisation
+### Visualisation
 
-##Features
+### Features
 
 ### Design
 Design of this project can be broken down into two parts; Data structure selection and class architecture. 
@@ -93,10 +93,10 @@ and categorical/nominal types.
 ### Versioning Statergy
 [semantic versioning](https://semver.org/)
 
-## Authors
+### Authors
 * Andrew Rippington
 
-## Credits
+### Credits
 
 ## References
 * [Gitlab Markdown Guide](https://docs.gitlab.com/ee/user/markdown.html)
