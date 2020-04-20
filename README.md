@@ -63,6 +63,7 @@ ClosedXML; will be installed automatically upon first opening the project. (Used
 ### Visualisation
 
 ### Features
+What makes this project stand out!?
 
 ### Design
 Design of this project can be broken down into two parts; Data structure selection and class architecture. 
@@ -91,6 +92,7 @@ measure the capability of the framework for accepting input data of different fo
 and categorical/nominal types. 
 
 ### Versioning Statergy
+Dataset specific code and generalised code
 [semantic versioning](https://semver.org/)
 
 ### Authors
