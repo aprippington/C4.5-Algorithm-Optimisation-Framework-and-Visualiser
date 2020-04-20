@@ -49,20 +49,20 @@ ClosedXML; will be installed automatically upon first opening the project. (Used
 
 ### Running 
 
-* Parameters are stored at the following locations:
-*  	R - row limiting parameter
-•	K – number of partitions to split our data into for k-fold cross validation (default: 10)
-•	O – accuracy/RMSE or size (or both)
-•	Tr – Training set size (as a proportion of the full dataset)
-•	T - Test set size (as a proportion of the full dataset)
-•	V - Validation set size set (as a proportion of the full dataset)
-•	Vi - Validation subset size (as a proportion of the validation set)
-•	i – the number of times to perform our optimisation cycle
-•	P – probability that a change is kept if it worsens the solution 
-•	X – number of optimisation iterations implemented before re-selecting a random subset of our validation set
-•	D – Dataset 
+* Set all parameters to the desired values;
+*  	R - row limiting parameter                                                                                      Location: DecicionTree.cs line 37
+•	V - Validation set size set (as a proportion of the full dataset)                                               Location: DecicionTree.cs line 646
+•	i – the number of times to perform our optimisation cycle                                                       Location: DecicionTree.cs line 662
+•	X – number of optimisation iterations implemented before re-selecting a random subset of our validation set     Location: DecicionTree.cs line 670
+•	Vi - Validation subset size (as a proportion of the validation set)                                             Location: DecicionTree.cs line 774
+•	D – Dataset (path to CSV file where dataset to be classified is stored)                                         Location: DecicionTree.cs line 811 
+•	K – number of partitions to split our data into for k-fold cross validation (default: 10)                       Location: DecicionTree.cs line 811
+•   Results - desired name of output .xlsx file                                                                     Location: DecisionTree.cs line 881
 
-* Set all parameters to desired values and run Program.cs Main method
+Note that both the training and test set sizes, Tr and T, are implicitly determined by the value of K. 
+I.e if K=10, Tr=90% and T = 10%    or   if k=5, Tr=80% and T =20%.
+
+* To initiate the program, run Program.cs Main method
 
 
 ### Capabilities & Restrictions
