@@ -190,7 +190,7 @@ namespace Decision_Tree_Optimisation_Generalised
             return n;
         }
 
-        public DataTable CollectMatchingRowsDouble(DataTable t, DataColumn col, double Threshold, out DataTable remainder)  //WORKING (TESTED)
+        public DataTable CollectMatchingRowsDouble(DataTable t, DataColumn col, double Threshold, out DataTable remainder) 
         {
             DataTable z = t.Clone();
             DataTable subTable = t.Clone();
@@ -244,7 +244,7 @@ namespace Decision_Tree_Optimisation_Generalised
         public double FindInfoGainPerThisAttribute(DataTable t, DataColumn attribute, out double thresholdVal) 
         {                                                                                                                                                                      
             double infoGainThisAtt = 0;
-            string[] cols = new string[] { attribute.ColumnName, t.Columns[t.Columns.Count - 1].ColumnName };  // "t.Columns[t.Columns.Count-1].ColumnName" = name of target column
+            string[] cols = new string[] { attribute.ColumnName, t.Columns[t.Columns.Count - 1].ColumnName };  
             DataView v = new DataView(t);
             DataTable reduced_table = v.ToTable(false, cols);
             Type column_type = t.Columns[t.Columns.Count - 1].DataType;
@@ -350,11 +350,6 @@ namespace Decision_Tree_Optimisation_Generalised
                 }                           
                 double total = FindEntropy(t) - ThresholdEntropy;
                 thresholdVal = ThresholdValue;
-                //Console.WriteLine("Identifying as double");
-                //Console.WriteLine("Threshold Value is: -->  " + ThresholdValue);
-                //Console.WriteLine("Threshold Entropy is: -->  " + ThresholdEntropy);
-                //Console.WriteLine("Information Gain for the best split in Column: " + attribute.ColumnName + " is: -->" + total);
-                //Console.WriteLine("Selected Split Information Gain =  " + total + "  Column Name =  " + attribute.ColumnName);
                 return total;               
             }
 
@@ -492,7 +487,7 @@ namespace Decision_Tree_Optimisation_Generalised
             else
             {
                 c = (-a / b) * (Math.Log(a / b, 2));                           
-            }                                                                  //REMEMBER THIS ALREADY INCLUDES THE MINUS SIGN
+            }                                                                 
             return c;
         }
 
@@ -800,16 +795,11 @@ namespace Decision_Tree_Optimisation_Generalised
 
             DecisionTree tree = new DecisionTree();
 
-            //Abalone            
-            //tree.run_KMeans("C:\\Users\\Andy Rippington\\Documents\\BSc Data Science and Analytics\\Year 3\\CE301 - Capstone Project\\Source Datasets\\Abalone\\abalone_full_dataset.csv", 10, out double train, out double valid, out double test, out double size);
-
-            //Heart Disease
-            //tree.run_KMeans("C:\\Users\\Andy Rippington\\Documents\\BSc Data Science and Analytics\\Year 3\\CE301 - Capstone Project\\Source Datasets\\Heart_Disease\\heart_disease_full_data.csv", 10, out double train, out double valid, out double test, out double size);
+       
          
             for (int i = 0; i < 10; i++)
             {
-                tree.run_KMeans("C:\\Users\\Andy Rippington\\Documents\\BSc Data Science and Analytics\\Year 3\\CE301 - Capstone Project\\Source Datasets\\Heart_Disease\\heart_disease_full_data.csv", 10, out double train, out double valid, out double test, out double size, out double rmse);
-                //tree.run_KMeans("C:\\Users\\Andy Rippington\\Documents\\BSc Data Science and Analytics\\Year 3\\CE301 - Capstone Project\\Source Datasets\\Abalone\\abalone_full_dataset.csv", 10, out double train, out double valid, out double test, out double size, out double rmse);
+                tree.run_KMeans("PATH_TO_TARGET_DATASET", 10, out double train, out double valid, out double test, out double size, out double rmse);                
                 trains.Add(train);
                 valids.Add(valid);
                 tests.Add(test);
@@ -878,7 +868,7 @@ namespace Decision_Tree_Optimisation_Generalised
             }
             
             workbook.Worksheets.Add(table);
-            workbook.SaveAs("Heart_Disease_i_10000_X_100.xlsx");
+            workbook.SaveAs("Example_statistics_output");
 
             watch.Stop();
             TimeSpan ts = watch.Elapsed;
