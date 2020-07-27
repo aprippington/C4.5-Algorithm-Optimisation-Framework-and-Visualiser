@@ -66,6 +66,8 @@ Set all of the following parameters to desired values;
 Note that both the training and test set sizes, Tr and T, are implicitly determined by the value of K. 
 I.e if K=10, Tr=90% and T=10%    or   if k=5, Tr=80% and T=20%.
 
+Enter path to the target dataset (in .csv format) at DecicionTree.cs line 802
+
 To start the program, run Program.cs Main method
 
 ### Capabilities & Restrictions
